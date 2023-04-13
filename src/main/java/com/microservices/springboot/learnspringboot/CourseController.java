@@ -3,6 +3,7 @@ package com.microservices.springboot.learnspringboot;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CourseController {
 
 	
-	@RequestMapping("/courses")
+	@GetMapping("/courses")
 	public List<Course> retriveAllCourses(){
 		Course[] listOfCourses = {
 				new Course(1, "Learn AWS", "MicroServices101"),
@@ -23,16 +24,13 @@ public class CourseController {
 		return (List<Course>) Arrays.asList(listOfCourses);
 	}
 	
-	@RequestMapping("/courses/aws")
+	@GetMapping("/courses/aws")
 	public List<Course> retriveAwsCourses(){
 		Course[] listOfCourses = {
 				new Course(1, "Learn AWS", "MicroServices101"),
 				new Course(2, "Learn AWS 1", "MicroServices101"),
-				new Course(3, "Learn AWS 2", "MicroServices101"),
-				new Course(4, "Learn AWS 3", "MicroServices105")
-		};
-		
-		
+				new Course(3, "Learn AWS 2", "MicroServices101")
+				};
 		return (List<Course>) Arrays.asList(listOfCourses);
 	}
 }
