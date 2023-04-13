@@ -22,4 +22,17 @@ public class CourseController {
 		
 		return (List<Course>) Arrays.asList(listOfCourses);
 	}
+	
+	@RequestMapping("/courses/aws")
+	public List<Course> retriveAwsCourses(){
+		Course[] listOfCourses = {
+				new Course(1, "Learn AWS", "MicroServices101"),
+				new Course(2, "Learn AWS 1", "MicroServices101"),
+				new Course(3, "Learn AWS 2", "MicroServices101"),
+				new Course(4, "Learn AWS 3", "MicroServices105")
+		};
+		
+		
+		return (List<Course>) Arrays.asList(listOfCourses);
+	}
 }
