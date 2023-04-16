@@ -23,8 +23,11 @@ E.g:
 
 
 **3. Spring boot allows deploying easy. Tomcat webserver is in build in the start-web project. So simply install and follow steps below to deploy
-     right click on project and click *** Run As-> maven project-> enter clean install -> run ***
+     
+     1.Right click on project and click *** Run As-> maven project-> enter clean install -> run ***
      <img width="730" alt="Screenshot 2023-04-15 at 6 54 55 PM" src="https://user-images.githubusercontent.com/23514932/232262009-4be18704-1668-47da-ab59-149475f47a85.png">
+     
+     2.It will run and the terminal will show if build is a success and create a JAR file.
 
      
      
