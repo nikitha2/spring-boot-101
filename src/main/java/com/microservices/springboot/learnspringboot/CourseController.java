@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CourseController {
 
 	
+	// localhost:8080/courses
 	@GetMapping("/courses")
 	public List<Course> retriveAllCourses(){
 		Course[] listOfCourses = {
@@ -24,6 +25,8 @@ public class CourseController {
 		return (List<Course>) Arrays.asList(listOfCourses);
 	}
 	
+	
+	//localhost:8080/courses/aws
 	@GetMapping("/courses/aws")
 	public List<Course> retriveAwsCourses(){
 		Course[] listOfCourses = {
