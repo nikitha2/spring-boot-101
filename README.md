@@ -36,7 +36,26 @@ E.g:
       To exit type command+C or ctrl+C 
       
       
-
+**4. Monitor application using spring boot Actuator - monitor and manager application in production.
+   
+   a. Provides number of end-points
+      a.1. beans: complete list of Spring beans in the application
+      a.2. health: Application health information
+      a.3. metric: metrics about the application (if app is up or down)
+      a.4. mapping: details around request mapping
+      ....
+      
+   b. To add actuator to the project. Add dependency in pom file. Now run project (LearnStringBootApplication.java)
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+	
+   c. In browser *** localhost:8080/actuator *** will show app health and metrics by default.
+      add all other endpoint by add below line to the application.properties file
+      ** management.endpoint.web.exposure.include =* **
+    
+    
      
      
      
