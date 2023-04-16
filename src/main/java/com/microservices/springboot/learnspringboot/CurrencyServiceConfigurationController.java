@@ -10,6 +10,7 @@ public class CurrencyServiceConfigurationController {
 	@Autowired
 	private CurrencyServiceConfiguration currencyServiceConfiguration;
 	
+	//localhost:8080/currency-service
 	@GetMapping("/currency-service")
 	public CurrencyServiceConfiguration retriveCurrencyService(){
 		return currencyServiceConfiguration;

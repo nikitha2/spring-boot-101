@@ -1,12 +1,14 @@
-Starter project to get familairy with spring boot and mocro services
+Starter project to get familiarity with spring boot and mocro services
+
+***Core of spring boot-> starter projects and auto configuration. Helps build production ready applications faster.***
 
 **1. Managing App configuration using profiles**
-Applications have different environaments. Each environment might be connected to differnt databases, webservices, etc for the same application. We can do this easily with spring boot.
+Applications have different environments. Each environment might be connected to different databases, web-services, etc for the same application. We can do this easily with spring boot.
 
 <img width="522" alt="Screenshot 2023-04-12 at 10 24 34 PM" src="https://user-images.githubusercontent.com/23514932/231661490-378fc95b-3bb7-4eed-89a0-f56cbfaf65ae.png">
 
 E.g:
-1. Logging - can add differnt types of logging for different environments. Can change in application.properties file. Set logging level with ***logging.level.org.springframework=debug*** and profile can be set in application.properties with ***spring.profiles.active = debug***
+1. Logging - can add different types of logging for different environments. Can change in application.properties file. Set logging level with ***logging.level.org.springframework=debug*** and profile can be set in application.properties with ***spring.profiles.active = debug***
 
 
 
@@ -22,7 +24,7 @@ E.g:
      ***@ConfigurationProperties(prefix = "currency-service")*** is used to set @ConfigurationPropertiesClass and assign prefix to be used in properties file.
 
 
-**3. Spring boot allows deploying easy. Tomcat webserver is in build in the start-web project. So simply install and follow steps below to deploy
+**3. Spring boot allows deploying easy. Tomcat web-server is in build in the start-web project. So simply install and follow steps below to deploy
 
    a. Right click on project and click *** Run As-> maven project-> enter clean install -> run ***
 <img width="730" alt="Screenshot 2023-04-15 at 6 54 55 PM" src="https://user-images.githubusercontent.com/23514932/232262009-4be18704-1668-47da-ab59-149475f47a85.png">
@@ -52,7 +54,7 @@ E.g:
 		</dependency>
 	
    c. In browser *** localhost:8080/actuator *** will show app health and metrics by default.
-      add all other endpoint by add below line to the application.properties file
+      add all other end-point by add below line to the application.properties file
       ** management.endpoint.web.exposure.include =* **
     
     
