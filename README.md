@@ -29,6 +29,13 @@ E.g:
 
    b. It will run and the terminal will show if build is a success and create a JAR file.
      <img width="1326" alt="Screenshot 2023-04-15 at 7 01 07 PM" src="https://user-images.githubusercontent.com/23514932/232262153-a2f987da-52d6-4736-91fc-8f96de816240.png">
+     
+   c. Now open terminal as shown in the terminal.  *** /Users/nikitha/Downloads/learn-spring-boot/target/ *** 
+      Check java version is greater than 18 for this project(java --version). 
+      Now run *** learn-spring-boot-0.0.1-SNAPSHOT.jar *** with command : *** java -jar learn-spring-boot-0.0.1-SNAPSHOT.jar ***
+      To exit type command+C or ctrl+C 
+      
+      
 
      
      
